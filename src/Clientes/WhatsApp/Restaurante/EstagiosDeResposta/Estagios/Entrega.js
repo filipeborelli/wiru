@@ -1,7 +1,9 @@
 const cardapio = require("../../Cardapio/cardapio");
 const banco = require("../../Banco/banco");
 
-function execute(user, msg, contato) {
+function execute(user, msg, NomeDoCliente, Carrinho, Entrega, Endereco) {
+    let Observacao = msg;
+    banco.db[user].observacao = Observacao;
     banco.db[user].stage = 6;
 
     return [
