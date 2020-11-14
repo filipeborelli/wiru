@@ -1,8 +1,10 @@
 const cardapio = require("../../Cardapio/cardapio");
 const banco = require("../../Banco/banco");
 
-function execute(user, msg, contato) {
-    let menu = `Certo *${msg}*, dê uma olhada no nosso cardápio. \n \n`;
+function execute(user, msg, Carrinho, Observacao, Entrega, Endereco) {
+    let NomeDoCliente = msg;
+    banco.db[user].nome = NomeDoCliente;
+    let menu = `Certo *${NomeDoCliente}*, dê uma olhada no nosso cardápio. \n \n`;
     Object.keys(cardapio.menu).forEach((value) => {
         let element = cardapio.menu[value];
         menu += `*${value}* - *${element.produto}*\n*Descrição:* _${element.descricao}_  \n*Preço:* _R$ ${element.preco}_ \n \n`;
