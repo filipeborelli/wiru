@@ -4,6 +4,7 @@ const express = require("express");
 const cors = require('cors');
 const banco = require('./Banco/banco');
 const stages = require('./EstagiosDeResposta/index.js');
+const mysql = require('mysql2');
 
 function ExecutarRestaurante() {
     //-------------------------------------------------   Cliente 1   --------------------------------------------------------------
@@ -11,6 +12,8 @@ function ExecutarRestaurante() {
     const portaRestaurante = 1000; //Porta que o restaurante irá utilizar.
     let app1 = express(); // app1 significa o primeiro app do express para o cliente numero 1
     app1.use(cors());
+
+
 
 
     //Rota de inicio http://localhost:1000/iniciar
@@ -22,6 +25,7 @@ function ExecutarRestaurante() {
 
 
     app1.get('/iniciar', (req, res) => { //Função que irá iniciar o aplicativo para o cliente
+
         //Função que cria a instancia do cliente.   -----> Instancia Restaurante -----> Está salvando o QRCode na pasta do cliente.
         wiru.create('Restaurante', (base64Qrimg, asciiQR) => {
             let matches = base64Qrimg.match(/^data:([A-Za-z-+\/]+);base64,(.+)$/),
@@ -65,6 +69,11 @@ function ExecutarRestaurante() {
             banco.db[user] = {
                 stage: 0,
                 itens: [],
+                nome: "",
+                observacao: "",
+                entrega: "",
+                endereco: "",
+                pedido: [],
             };
             return banco.db[user].stage;
         }
