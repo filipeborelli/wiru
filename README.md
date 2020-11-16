@@ -10,6 +10,13 @@
 > This api uses the venon-bot as the main library.
 > By default sulla will try to use Google Chrome driver if installed, if not, it will use integrated Chromium instance
 
+# APP PREVIEW
+<p align="center">
+  <a href="https://github.com/filipeborelli/wiru">
+    <img width="600px" src="blob:https://web.telegram.org/86045337-7ccf-4f43-91ea-39951374f25e" alt="WiRU">
+  </a>
+</p>
+
 #### Changelog:
 > ☑️ Separating customers by folder on WhatsApp API
 >
@@ -25,3 +32,5 @@ Creates an integration interface with the WhatsApp iFood Rappi and UberEats plat
 All orders will be rendered in one application.
 Creates a virtual cart for all orders.
 Interacts with WhatsApp customers.
+
+
