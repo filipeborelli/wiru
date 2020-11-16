@@ -13,7 +13,7 @@
 # APP PREVIEW
 <p align="center">
   <a href="https://github.com/filipeborelli/wiru">
-    <img width="600px" src="blob:https://web.telegram.org/86045337-7ccf-4f43-91ea-39951374f25e" alt="WiRU">
+    <img width="600px" src="https://i.imgur.com/ofP38rM.png" alt="WiRU">
   </a>
 </p>
 
