@@ -11,7 +11,7 @@
 > By default sulla will try to use Google Chrome driver if installed, if not, it will use integrated Chromium instance
 
 # APP PREVIEW
-<p align="center">
+<p>
   <a href="https://github.com/filipeborelli/wiru">
     <img width="600px" src="https://i.imgur.com/ofP38rM.png" alt="WiRU">
   </a>
