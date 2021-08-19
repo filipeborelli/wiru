@@ -31,6 +31,6 @@
 Creates an integration interface with the WhatsApp iFood Rappi and UberEats platforms.
 All orders will be rendered in one application.
 Creates a virtual cart for all orders.
-Interacts with WhatsApp customers.
+Interacts with WhatsApp customers
 
 
